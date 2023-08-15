@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA-Universe</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    background-image: url(./assets/mountains-universe-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: 'Roboto', sans-serif;
+    padding: 4rem 7.2rem;
+}
+
+nav {
+    display: flex;
+    gap: 4.2rem;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: #c4c4cc;
+}
+
+a:hover {
+    color: #fff;
+    font-weight: 700;
+}
+nav img {
+    height: 4.3rem;
+    width: 4.3rem;
+}   
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="./assets/icon.svg" alt="Icone que simboliza o universo">
+        <a href="/" onclick="route()">Home</a>
+        <a href="/universe" onclick="route()">O universo</a>
+        <a href="/explorer" onclick="route()">Exploração</a>
+    </nav>
+    <div id="app">
+    </div>
+    <script type="module" src="./src/index.js"></script>
+</body>
+</html>
